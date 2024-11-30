@@ -4,10 +4,9 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 # Load the dataset
-data = pd.read_csv('./data/iris.csv')
+data = pd.read_csv('../data/iris.csv')
 
 # Preprocess the dataset
-
 X = data.drop('species', axis=1)
 y = data['species']
 
